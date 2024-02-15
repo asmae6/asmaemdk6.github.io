@@ -1,18 +1,18 @@
-//function to copy the same shipping name and zip to the billing details.
-function billingFunction(){
-
-     if(document.querySelector("#same").checked)
-     {
-          var name=document.querySelector("#shippingName").value;   //this will copy the value entered by the user in shipping name block
-          var zip=document.querySelector("#shippingZip").value;     //this will copy the value entered by the user in shipping zip block
-
-          document.querySelector("#billingName").value=name;   //finally these lines will copy the above initialised variables to the billing address and billing zip
-          document.querySelector("#billingZip").value=zip;
-     }
-
-     else
-     {
-          document.querySelector("#billingName").value="";
-          document.querySelector("#billingZip").value="";
-     }
+@media screen and (min-width: 772px) {
+    div {
+        width: 45%; /* Divs à 45% de la largeur de la fenêtre */
+        display: inline-block; /* Disposés horizontalement */
+        margin-right: 5%; /* Espacement entre les divs */
+        margin-bottom: 0; /* Pas d'espacement en bas */
+    }
+    
+    img {
+        max-height: 30vh; /* Images ne dépassant pas 30% de la hauteur de la fenêtre */
+        width: auto; /* Taille automatique en fonction de la hauteur maximale */
+    }
+}
+@media screen and (min-width: 998px) {
+    div {
+        width: 30%; /* Divs à 30% de la largeur de l'écran */
+    }
 }
